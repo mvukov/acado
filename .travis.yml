@@ -22,10 +22,10 @@ before_install:
  # Install necessary packages from apt-get
  - "./misc/travis_before_install.sh"
 script:
- - mkdir build
- - cd build
- - cmake -DCMAKE_BUILD_TYPE=Debug -DACADO_WITH_TESTING=ON ..
- - make
+# - mkdir build
+# - cd build
+# - cmake -DCMAKE_BUILD_TYPE=Debug -DACADO_WITH_TESTING=ON ..
+# - make
 after_success:
  # Run the tests, allowed to fail
 # - make test
